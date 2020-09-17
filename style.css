@@ -176,14 +176,70 @@ main{
 
 /* ------contact.html ----------*/
 
+#contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.226)),url("img/contactPageBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
 
+#google-map {
+ text-align: center;
+}
+iframe {
+    padding: 2%;
+}
 
+#client-form {
 
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
 
+input, textarea {
+    width: 800px;
+    padding: 20px;
+    margin: 20px;
+}
+input[type=submit] {
 
+    width: 200px;
+    font-size: 3vh;
+    background-color: #854a4a;
+    color: white;
+}
+::placeholder {
+    font-size: 3vh;
+}
 
+#contact-info .info1 {
 
+    padding: 20px;
+}
+.info1 p {
+    margin-top: 10px;
+}
+#contact-info .tel {
 
+    padding: 20px;
+}
+
+.tel p {
+    margin-top: 10px;
+}
+#contact-info .icon {
+    padding: 20px;
+}
+.icon i {
+    margin-top: 10px;
+    font-size: 40px;
+    color:  #854a4a;;
+  
+   
+
+}
 
 
 

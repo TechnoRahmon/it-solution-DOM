@@ -134,7 +134,7 @@ header ul li a{
     background-image: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.226)),url("img/contactPageBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     background-position: center;
 }
 
@@ -147,25 +147,163 @@ iframe {
 
 #client-form {
 
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
+   display: grid;
+   grid-template-columns: 50% 40% ;
+   justify-content: space-evenly;
+   margin-left: 1.5%;
+
 }
 
 input, textarea {
-    width: 800px;
-    padding: 20px;
-    margin: 20px;
+    width: 100%;
+    padding: 3%;
+    margin: 5%;
 }
 input[type=submit] {
 
-    width: 200px;
-    font-size: 3vh;
+    width: 30%;
+    font-size: 2vh;
     background-color: #854a4a;
     color: white;
+    padding: 3%;
 }
 ::placeholder {
     font-size: 3vh;
+}
+
+#contact-info {
+
+    padding: 3%;
+}
+#contact-info .info1 {
+
+    padding: 20px;
+}
+.info1 p {
+    margin-top: 5%;
+}
+#contact-info .tel {
+
+    padding: 20px;
+}
+
+.tel p {
+    margin-top: 30px;
+}
+#contact-info .icon {
+    padding: 20px;
+}
+.icon i {
+    margin-top: 10px;
+    font-size: 40px;
+    color:  #854a4a;;
+
+}
+/* Mobile Version*/
+@media only screen and (max-width: 600px) and (min-width: 450px)  {
+
+    #contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.226)),url("img/contactPageBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    background-position: center;
+}
+
+#google-map {
+ text-align: center;
+}
+iframe {
+    padding:2px;
+    width: 50vh;
+    height: 30vh;  
+}
+
+#client-form {
+
+display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+}
+input[type=submit] {
+
+    width: 30%;
+    font-size: 2vh;
+    background-color: #854a4a;
+    color: white;
+}
+
+#contact-info {
+
+    padding: 3%;
+}
+#contact-info .info1 {
+
+    padding: 20px;
+}
+.info1 p {
+    margin-top: 10px;
+}
+#contact-info .tel {
+
+    padding: 20px;
+}
+
+.tel p {
+    margin-top: 10px;
+}
+#contact-info .icon {
+    padding: 20px;
+}
+.icon i {
+    margin-top: 10px;
+    font-size: 40px;
+    color:  #854a4a;;
+
+}
+
+}
+
+/* Tab Version*/
+@media only screen and (max-width: 800px) and (min-width: 600px)  {
+
+    #contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.226)),url("img/contactPageBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+#google-map {
+ text-align: center;
+}
+iframe {
+    padding:2px;
+    width: 70vh;
+    height: 30vh;  
+}
+
+#client-form {
+
+display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+}
+input[type=submit] {
+
+    width: 30%;
+    font-size: 2vh;
+    background-color: #854a4a;
+    color: white;
 }
 
 #contact-info .info1 {
@@ -190,20 +328,199 @@ input[type=submit] {
     margin-top: 10px;
     font-size: 40px;
     color:  #854a4a;;
-  
-   
+
+}
 
 }
 
 
 
-
-
-
-
 /* ------about.html ----------*/
+body {
+    letter-spacing: 2px;
+}
+#section1 {
 
+    display: grid;
+    grid-template-columns: auto auto;
+    line-height: 1.4;
+}
+img {
+    max-width:100%;
+   margin-top: 30%;
+   margin-left: 12%;
+}
 
+.who-we-are {
+
+    margin-top: 10%;
+    padding: 10%;
+    margin-left: 2%;
+}
+.who-we-are h1 {
+    font-size: 10vh;
+}
+.who-we-are h3 {
+    font-size: 5vh;
+    text-align: justify;
+    color: #ad5454;
+}
+.who-we-are p {
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+#section2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+.descriptions {
+
+    background-color: rgba(248, 248, 248, 0.979);
+}
+.descriptions h2 {
+  
+    padding: 10%;
+    text-align: left;
+    color: #ad5454;
+}
+
+.descriptions p {
+
+    padding: 10%;
+    text-align: left;
+}
+
+/*Mobile Version*/
+
+@media only screen and (max-width: 600px) and (min-width: 450px)  {
+
+    #section1 {
+
+    display: block;
+    line-height: 1.4;
+}
+img {
+    width:100%;
+   margin-top: 20%;
+   margin-left: 0.5%;
+}
+
+.who-we-are {
+
+    margin-top: 10%;
+    padding: 10%;
+    margin-left: 2%;
+}
+.who-we-are h1 {
+    font-size: 5vh;
+    text-align: left;
+    margin-bottom: 10%;
+}
+.who-we-are h3 {
+    font-size: 3vh;
+    text-align: left;
+    color: #ad5454;
+    margin-bottom: 2%;
+}
+.who-we-are p {
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+#section2 {
+    display: block;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+.descriptions {
+
+    background-color: rgba(248, 248, 248, 0.979);
+}
+.descriptions h2 {
+  
+    padding: 10%;
+    text-align: left;
+    color: #ad5454;
+}
+
+.descriptions p {
+
+    padding: 3%;
+    text-align: left;
+}
+
+}
+
+/*Tab Version */
+
+@media only screen and (max-width: 1200px) and (min-width: 600px)  {
+
+    #section1 {
+
+    display: block;
+    line-height: 1.4;
+}
+img {
+    width:100%;
+   margin-top: 20%;
+   margin-left: 0.5%;
+}
+
+.who-we-are {
+
+    margin-top: 10%;
+    padding: 10%;
+    margin-left: 2%;
+}
+.who-we-are h1 {
+    font-size: 5vh;
+    text-align: left;
+    margin-bottom: 10%;
+}
+.who-we-are h3 {
+    font-size: 3vh;
+    text-align: left;
+    color: #ad5454;
+    margin-bottom: 10%;
+}
+.who-we-are p {
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+#section2 {
+    display: block;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+.descriptions {
+
+    background-color: rgba(248, 248, 248, 0.979);
+}
+.descriptions h2 {
+  
+    padding: 5%;
+    text-align: left;
+    color: #ad5454;
+    padding: 5%;
+}
+
+.descriptions p {
+
+    padding: 3%;
+    text-align: left;
+}
+
+}
 
 
 

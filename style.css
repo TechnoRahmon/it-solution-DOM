@@ -16,7 +16,7 @@ COLORS :
 */
 
 
-/*--------style for all-------*/
+/*--------smargin-left:60px;tyle for all-------*/
 
 /* serfis font */
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -83,19 +83,20 @@ body{
     margin:20px 25px 5px 30px;
     float :right;
     display: inline-block;
+    position: relative;
 
 }
 
 .nav li a{ 
     text-decoration: none;
     color:#0d0d0d ;
- 
+   
     
 }
 
 .nav li a:hover{ 
     color:#1C9E75;
-     
+    transition: color 0.2s ease-in;
      
  }
 
@@ -103,6 +104,46 @@ body{
     color:#1C9E75;
 }
    
+/* sub nav, Dropmenu bar */
+.sub{
+    width:150%;
+    overflow: hidden;
+    position: absolute;
+    left:-26%;
+    top: 101%;
+    background-color:#1c9e75;  
+    text-align: center;
+    padding:5px 10px;
+    min-height:100% ;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+   
+}
+
+.sub li:hover a{ 
+    color :#141414 ;
+    
+    
+}
+
+
+
+.sub li a{ 
+    text-decoration: none;
+    color:#fff ;
+    padding :20px 0px;
+    margin:0;
+    transition : color 0.3s ease-in;
+    
+}
+
+.nav li:hover .sub{ 
+    transition :  visibility 0.4s , opacity 0.5s ease-out;
+    visibility: visible;
+    opacity: 1;
+}
+
 
 
 
@@ -113,9 +154,9 @@ body{
 header { 
     position: relative;
     padding : 0px 0;
-    margin : 0;
+    margin-bottom:60px;
     background: rgb(240, 240, 240);
-    height:40vw;
+    height:90vh;
     background-image: linear-gradient(#1c9e7525, #2c2c2cb9),url(img/wallpape2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -145,6 +186,10 @@ header {
     
     
 }
+
+.title-box h1 span{
+    color:#1C9E75;    
+}
 .title-box p{
     color:#1C9E75;
     text-align: left;
@@ -159,9 +204,217 @@ header {
    
 }
 
+/* -----------Service section---------- */ 
 
-main{ 
-    height: 400px;
+
+section{ 
+    margin:120px auto 60px auto;
+    width:65%;
+
+}
+
+section h2{
+    
+    padding-left: 5px;
+    
+    color:#161616;
+    text-transform: uppercase;
+    font-size: 130%;
+    font-weight: bold;
+    position: relative;
+    
+    margin-top: 60px ;
+}
+
+section h2::after{
+    content: ' ';
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    background-color:#0088ff;
+    left: 0px;
+    top:40px;
+    margin:0 auto;
+}
+
+
+.Serv_icon_box{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    margin-top:70px;
+    padding : 0 ;
+    color:#131313;
+    font-size: 130%;
+    box-shadow: 2px 1px 16px -2px #6b6b6b;
+    background-color:rgb(233, 233, 233);
+}
+
+
+
+.Serv_icon_box div{
+    width:100%;
+    padding :80px;
+    margin:0;
+    justify-self: center;
+    background-color: rgb(255, 255, 255);
+    transition: transform  0.3s , background-color 0.3s, box-shadow 0.2s  ease-in;
+   
+}
+
+.Serv_icon_box div:hover {
+
+        transform: translate(0,-20px);
+        background-color:rgb(235, 235, 235);
+        box-shadow: 2px 1px 16px -2px #6b6b6b;
+}
+.big-icon{ 
+    color:#1c9e75;
+    font-size: 350%;
+    margin-bottom: 30px;
+}
+
+
+.Serv_icon_box h3{
+    margin-bottom: 15px;
+}
+
+
+.Serv_icon_box p{
+    color:#3b3b3b;
+    text-align: justify;
+    width:90%;
+    line-height: 1.8;
+}
+
+
+/*------      feature projects section          -------*/ 
+
+.section-featuerPro{
+    
+    background-image: url(img/wallpaper1.jpg);
+    height: 90vh;
+    margin-bottom :0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    background-size: 100%;
+    width:100%;
+  
+}
+
+
+.section-featuerPro .feat_Pro_title{ 
+   
+    background-color: rgba(255, 255, 255, 0.932);
+    width:20%;
+    position: relative;
+    margin-top:20px;
+    padding : 20px 0px 20px 40px;
+    left: 17.5%;
+   
+}
+.section-featuerPro .feat_Pro_title::after{
+    content: ' ';
+    height: 2px;
+    width: 275px;
+    position: absolute;
+    background-color:#0088ff;
+    left: 10%;
+    top:82%;
+    margin:0 auto;
+}
+
+
+
+.info-box{
+        position: relative;
+        width: 30%;
+        height: 400px;
+       background-color: #1c9e75;
+        margin:0 auto;
+        top:100%;
+        transition: top 1s ease-in-out;
+        padding :60px 70px 60px 60px; 
+        color:#ffffff;
+        box-shadow: 3px 4px 18px -2px #1a1a1a;
+}
+.info-box span{
+    margin: 10px 0px;
+    display: inline-block;
+    font-style: italic;
+    color:#ffffff;
+}
+
+.info-box h1{
+    font-size: 250%;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+
+.info-box p{
+    line-height: 1.2;
+    text-align: justify;
+    width: 100%;
+    margin-TOP:20px;
+    font-size: 150%;
+}
+
+
+.info-mask{
+    position: relative;
+    overflow: hidden;
+    transition: top 1s ease-in;
+    width:100%;
+    height: 80%;
+    z-index: 1;
+}
+
+
+.info-mask:hover .info-box { 
+    top:30%;
+}
+
+
+/*------      partner section          -------*/ 
+
+
+.section-partner{
+
+    background-color:rgb(238, 238, 238);
+    padding : 60px;
+    width:100%;
+    margin-top:0;
+}
+
+.partner-box{
+   
+
+    
+    width: 50%;
+    
+    margin:65px auto;
+    
+}
+.section-partner div { 
+
+    overflow: hidden;
+ 
+    display: flex;
+   width:65%;
+    border:1px solid #929292;
+}
+.section-partner h2{
+    margin:0 auto;
+    width:65%;
+}
+.section-partner div img{ 
+    padding:20px;
+    width:100%;
+    height:auto;
+    max-width: 100%;
+    
+
 }
 
 
@@ -174,7 +427,14 @@ main{
 
 
 
-/* ------contact.html ----------*/
+
+
+
+
+
+
+
+/* ------contact.html ------------------------------------*/
 
 #contact-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.226)),url("img/contactPageBg.jpg");

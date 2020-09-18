@@ -237,11 +237,10 @@ input[type=submit]:hover {
     background-color:#15634a ;
     cursor: pointer;
 }
-::placeholder {
-    font-size: 3vh;
-    letter-spacing: 1.5px;
+textarea {
+    resize: none;
+    height: 300px;
 }
-
 #contact-info {
 
     padding: 3%;
@@ -552,6 +551,20 @@ input[type=submit]:hover {
 
 
 /* ------about.html ----------*/
+/*
+COLORS : 
+            green:#2c9e1c        
+            blue:#0088ff
+            lightblue: #0088FF
+            dark green: #1C9E75
+            green/blue-light:#1c9e75
+            light green:#5fb839
+            black:#0d0d0d 
+
+
+
+*/
+
 
 #about-header {
 
@@ -602,7 +615,6 @@ input[type=submit]:hover {
     text-align: center;
     width: 100%;
     padding: 2%;
-    height: 100vh;
     margin-top: 5%;
 }
 .descriptions {
@@ -625,7 +637,7 @@ input[type=submit]:hover {
 
 /*Mobile Version*/
 
-@media only screen and (max-width: 600px) and (min-width: 450px)  {
+@media screen and (max-width: 550px)  { 
 
     #section1 {
 
@@ -635,6 +647,7 @@ input[type=submit]:hover {
 img {
     width:100%;
     margin: auto;
+    overflow: auto;
 }
 
 .who-we-are {
@@ -660,11 +673,12 @@ img {
 }
 
 #section2 {
-    display: block;
+    display:block;
     line-height: 1.4;
     text-align: center;
     width: 100%;
     padding: 2%;
+  
 }
 .descriptions {
 
@@ -681,6 +695,31 @@ img {
     padding: 1% 10%;
     text-align: left;
 }
+
+footer {
+
+    background-color: #1c9e75;
+    color: white;
+}
+#footer-section {
+    
+    padding: 5%;
+    justify-items: center;
+}
+
+.contact-part h3 {
+
+    padding: 3%;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+}
+.contact-part p {
+
+    padding: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+}
+
 
 }
 
@@ -745,6 +784,32 @@ img {
     padding: 1% 10%;
     text-align: left;
 }
+
+footer {
+
+    background-color: #1c9e75;
+    color: white;
+}
+#footer-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+    justify-items: center;
+}
+
+.contact-part h3 {
+
+    padding: 3%;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+}
+.contact-part p {
+
+    padding: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+}
+
 
 
 }
